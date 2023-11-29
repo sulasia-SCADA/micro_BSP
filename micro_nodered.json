@@ -1,0 +1,640 @@
+[
+    {
+        "id": "03f533a0c75ebd2f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d85bbcee29cc1f0f",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "9f60afb136905ef4",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "3ea78ba576f26c08",
+        "type": "amqp-broker",
+        "name": "",
+        "host": "localhost",
+        "port": "5672",
+        "vhost": "",
+        "tls": false,
+        "credsFromSettings": false
+    },
+    {
+        "id": "33f460a4c4855dbc",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "database",
+        "name": "",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "http://localhost:8086",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "e51f9084c202c559",
+        "type": "amqp-broker",
+        "name": "",
+        "host": "localhost",
+        "port": "5672",
+        "vhost": "",
+        "tls": false,
+        "credsFromSettings": false
+    },
+    {
+        "id": "3b66e8c45c3095c1",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "1a601a5c.41e152",
+        "type": "ui_tab",
+        "name": "iGate",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5f8505eef1f2b6fb",
+        "type": "ui_tab",
+        "name": "File_Upload",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "592062140063816d",
+        "type": "ui_tab",
+        "name": "Package",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a75374f7.68c6e",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8d0a5733.56e3d8",
+        "type": "ui_group",
+        "name": "Shell Script Generator",
+        "tab": "1a601a5c.41e152",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "2b9a4965680beb83",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "5f8505eef1f2b6fb",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b2f48df0b0d2e45e",
+        "type": "ui_group",
+        "name": "File_Downloader",
+        "tab": "592062140063816d",
+        "order": 5,
+        "disp": true,
+        "width": "15",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "21b2bd538d5c5f61",
+        "type": "ui_group",
+        "name": "Industry-Specific-Details",
+        "tab": "592062140063816d",
+        "order": 1,
+        "disp": true,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5a3e0c55f57cd287",
+        "type": "ui_group",
+        "name": "Tarrif-Energy-Bill-Specifications(Electrical-Bills/Business)",
+        "tab": "592062140063816d",
+        "order": 2,
+        "disp": true,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3702af129b2cd8a4",
+        "type": "ui_group",
+        "name": "PV-Specific-Equipment-&-Devices",
+        "tab": "592062140063816d",
+        "order": 3,
+        "disp": true,
+        "width": 15,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "e20a09d583322e9b",
+        "type": "ui_group",
+        "name": "Igate_Package",
+        "tab": "1a601a5c.41e152",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3ad2bc4a7ed3c9a3",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 20,
+        "collapse": false
+    },
+    {
+        "id": "1e6d07b2.f68f2",
+        "type": "ui_group",
+        "name": "Shell Script",
+        "tab": "a75374f7.68c6e",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a17d9f03.78776",
+        "type": "inject",
+        "z": "03f533a0c75ebd2f",
+        "name": "Initialize Variables",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            },
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"message16\":\"\"}",
+        "payloadType": "str",
+        "x": 150,
+        "y": 340,
+        "wires": [
+            [
+                "f58f47e9.e825d"
+            ]
+        ]
+    },
+    {
+        "id": "2aa88bb7.4a849a",
+        "type": "function",
+        "z": "03f533a0c75ebd2f",
+        "name": "Generate Script",
+        "func": "var message = msg.payload.message || \"1526\";\nvar message1 = msg.payload.message1 || \"nil\";\nvar message2 = msg.payload.message2 || \"nil\";\nvar message3 = msg.payload.message3 || \"nil\";\nvar message4 = msg.payload.message4 || \"nil\";\nvar message5 = msg.payload.message5 || \"nil\";\nvar message6 = msg.payload.message6 || \"nil\";\nvar message7 = msg.payload.message7 || \"nil\";\nvar message8 = msg.payload.message8 || \"nil\";\nvar message9 = msg.payload.message9 || \"nil\";\nvar message10 = msg.payload.message10 || \"nil\";\nvar message11 = msg.payload.message11 || \"nil\";\nvar message12 = msg.payload.message12 || \"nil\";\nvar message13 = msg.payload.message13 || \"yes\";\nvar message14 = msg.payload.message14 || \"Number\";\nvar message15 = msg.payload.message15 || \"nil\";\nvar message16 = msg.payload.message16 || \"yes\";\nvar message17 = msg.payload.message17 || \"yes\";\n\nvar script = `#!/bin/bash\\n\\n` +\n    `IGATE_ID=${message}\\n` +\n    `UNIT_DESC=\"${message1}\"\\n` +\n    `IGATE_PREFIX=\"iGatePlus\"\\n` +\n    `IP=\"${message2}\"\\n` +\n    `BROADCAST_IP=\"${message3}\"\\n` +\n    `GATEWAY_IP=\"${message4}\"\\n` +\n    `UNIT_SWITCH=\"on\"\\n` +\n    `PORTAL_ID=\"245\"\\n` +\n    `SERVER_URL=\"${message15}\"\\n` +\n    `DHCP=\"no\"\\n` +\n    `IGATE_ID_WITHOUT_PLANT_ID=\"80\"\\n` +\n    `PORTAL_URL=\"${message15}\"\\n` +\n    `\\n` +\n    `sqlite3 /opt/iplon/db/iPLON.sqlite <<END_SQL\\n` +\n    `.timeout 1;\\n` +\n    `delete from masters where config=\"SCADA=YES\";\\n` +\n    `delete from masters where name=\"VirtualMasterLinux\";\\n` +\n    `END_SQL\\n` +\n    `\\n`;\n\nif (message6 !== \"nil\") {\n    script +=\n        `sqlite3 /opt/iplon/db/iPLON.sqlite <<END_SQL\\n` +\n        `.timeout 1;\\n` +\n        `INSERT INTO masters values (\"ModtcpMasterLinux\",\"ethernet\",\"${message6}\",\"1\",\"\",\"SCADA=YES\")\\n` +\n        `END_SQL\\n`;\n}\nif (message7 !== \"nil\") {\n    script +=\n        `sqlite3 /opt/iplon/db/iPLON.sqlite <<END_SQL\\n` +\n        `.timeout 1;\\n` +\n        `INSERT INTO masters values (\"ModtcpMasterLinux\",\"ethernet\",\"${message7}\",\"2\",\"\",\"SCADA=YES\")\\n` +\n        `END_SQL\\n`;\n}\nif (message8 !== \"nil\") {\n    script +=\n        `sqlite3 /opt/iplon/db/iPLON.sqlite <<END_SQL\\n` +\n        `.timeout 1;\\n` +\n        `INSERT INTO masters values (\"ModtcpMasterLinux\",\"ethernet\",\"${message8}\",\"3\",\"\",\"SCADA=YES\")\\n` +\n        `END_SQL\\n`;\n}\nif (message9 !== \"nil\") {\n    script +=\n        `sqlite3 /opt/iplon/db/iPLON.sqlite <<END_SQL\\n` +\n        `.timeout 1;\\n` +\n        `INSERT INTO masters values (\"ModtcpMasterLinux\",\"ethernet\",\"${message9}\",\"4\",\"\",\"SCADA=YES\")\\n` +\n        `END_SQL\\n`;\n}\nif (message10 !== \"nil\") {\n    script +=\n        `sqlite3 /opt/iplon/db/iPLON.sqlite <<END_SQL\\n` +\n        `.timeout 1;\\n` +\n        `INSERT INTO masters values (\"ModtcpMasterLinux\",\"ethernet\",\"${message10}\",\"5\",\"\",\"SCADA=YES\")\\n` +\n        `END_SQL\\n`;\n}\nif (message11 !== \"nil\") {\n    script +=\n        `sqlite3 /opt/iplon/db/iPLON.sqlite <<END_SQL\\n` +\n        `.timeout 1;\\n` +\n        `INSERT INTO masters values (\"ModtcpMasterLinux\",\"ethernet\",\"${message11}\",\"6\",\"\",\"SCADA=YES\")\\n` +\n        `END_SQL\\n`;\n}\nif (message12 !== \"nil\") {\n    script +=\n        `sqlite3 /opt/iplon/db/iPLON.sqlite <<END_SQL\\n` +\n        `.timeout 1;\\n` +\n        `INSERT INTO masters values (\"ModtcpMasterLinux\",\"ethernet\",\"${message12}\",\"7\",\"\",\"SCADA=YES\")\\n` +\n        `END_SQL\\n`;\n}\nif (message13 == \"yes\") {\n    script +=\n        `sqlite3 /opt/iplon/db/iPLON.sqlite <<END_SQL\\n` +\n        `.timeout 1;\\n` +\n        `INSERT INTO masters values (\"ModbusMasterLinux\",\"/dev/ttyUS\",\"1\",\"${message14}\",\"\",\"SCADA=YES\")\\n` +\n        `END_SQL\\n`;\n}\nif (message16 == \"yes\") {\n    script +=\n        `sqlite3 /opt/iplon/db/iPLON.sqlite <<END_SQL\\n` +\n        `.timeout 1;\\n` +\n        `INSERT INTO sending values (\"/mnt/jffs2/dglog\", \"main\", \"main\", \"iplon\")\\n` +\n        `END_SQL\\n`;\n}\nscript +=\n\n    `\\n` +\n    `echo \"All most the work has completed....\"\\n` +\n    `\\n` +\n    `cp hostname /etc/\nchmod 777 /etc/hostname\nchown root:root /etc/hostname\\n` +\n    `\\n` +\n    `cp hosts /etc/\nchmod 777 /etc/hosts\nchown root:root /etc/hosts\\n` +\n    `\\n` +\n    `cp cron/crontabs/iplon /var/spool/cron/crontabs/iplon\nchmod 777 /var/spool/cron/crontabs/iplon\nchown crontab:crontab /var/spool/cron/crontabs/iplon\\n` +\n    `\\n` +\n    `cp iplon/jffs2/solar/y.sh /opt/iplon/jffs2/solar\nchmod 777 /opt/iplon/jffs2/solar/y.sh\nchown iplon:iplon /opt/iplon/jffs2/solar/y.sh\\n` +\n    `\\n` +\n    `cp iplon/jffs2/solar/yasdi.lua /opt/iplon/jffs2/solar\nchmod 777 /opt/iplon/jffs2/solar/yasdi.lua\nchown iplon:iplon /opt/iplon/jffs2/solar/yasdi.lua\\n` +\n    `\\n` +\n    `cp -r iplon/jffs2/solar/lua /opt/iplon/jffs2/solar\nchmod -R 777 /opt/iplon/jffs2/solar/lua\nchown -R iplon:iplon /opt/iplon/jffs2/solar/lua\\n` +\n    `\\n` +\n    `chmod -R 777 /opt/iplon/scripts\nchown -R iplon:iplon /opt/iplon/scripts\\n` +\n    `\\n` +\n    `echo \"Now we can start to edit the Sqlite Database...\"\\n` +\n    `\\n` +\n\n    `sqlite3 /opt/iplon/db/iPLON.sqlite <<END_SQL\\n` +\n    `.timeout 1;\\n` +\n    `INSERT INTO sending values (\"/mnt/jffs2/dglog\",\"main\",\"main\",\"iplon\");\\n` +\n    `UPDATE unit SET value = $IGATE_ID WHERE field = \"id\";\\n` +\n    `UPDATE unit SET value = \"$UNIT_DESC\" WHERE field = \"desc\";\\n` +\n    `UPDATE unit SET value = \"$IGATE_PREFIX\" WHERE field = \"hostname\";\\n` +\n    `UPDATE unit SET value = \"$UNIT_SWITCH\" WHERE field = \"switch\";\\n` +\n    `UPDATE unit SET value = \"$PORTAL_ID\" WHERE field = \"portalId\";\\n` +\n    `UPDATE unit SET value = \"$PORTAL_URL\" WHERE field = \"portal\";\\n` +\n    `UPDATE ips SET ip = \"$IP\" WHERE id = 1;\\n` +\n    `UPDATE ips SET broadcast = \"$BROADCAST_IP\" WHERE id = 1;\\n` +\n    `UPDATE connection SET value = \"$GATEWAY_IP\" WHERE field = \"gw\";\\n` +\n    `UPDATE unit SET value = \"$SERVER_URL\" WHERE field = \"server\";\\n` +\n    `UPDATE connection SET value = \"$DHCP\" WHERE field = \"dhcp\";\\n` +\n    `UPDATE unit SET value = \"$IGATE_ID_WITHOUT_PLANT_ID\" WHERE field = \"switchNumber\";\\n` +\n    `DELETE FROM cfgdata;\\n` +\n    `END_SQL\\n` +\n    `\\n` +\n\n    `echo \"Setting up default configuration changes\"\\n` +\n    `echo $IGATE_PREFIX$IGATE_ID > /etc/hostname\\n` +\n    `echo \"127.0.0.1       localhost\" > /etc/hosts\\n` +\n    `echo \"127.0.1.1       \"$IGATE_PREFIX$IGATE_ID >> /etc/hosts\\n` +\n    `\\n`;\n\nif (message16 == \"yes\")\n{\n    script +=\n    `if [ ! -d \"/opt/iplon/jffs2/dglog\" ]; then\n   mkdir /opt/iplon/jffs2/dglog\n   fi\n   chmod 777 /opt/iplon/jffs2/dglog\n   chown iplon:iplon /opt/iplon/jffs2/dglog\\n` +\n    `\\n`;\n}\nscript +=\n\n    `echo \"Setting up ourzone to IST\"\\n` +\n    `sudo echo \"Asia/Kolkata\" > /etc/timezone\\n` +\n    `sudo dpkg-reconfigure tzdata\\n` +\n    `\\n` +\n    `echo \"Setting up Cron Scripts\"\\n` +\n    `touch /var/spool/cron/crontabs/root\n    chmod 777 /var/spool/cron/crontabs/root\n    chown crontab:crontab /var/spool/cron/crontabs/root\\n` +\n    `echo \"*/10 * * * * /opt/iplon/scripts/persistenceRestore.sh >> /var/log/iplon/y.log 2&>1\" > /var/spool/cron/crontabs/root\\n` +\n    `echo \" \" >> /var/spool/cron/crontabs/root\\n` +\n    `echo \"@reboot /opt/iplon/scripts/persistenceRestore.sh restore >> /var/log/iplon/y.log 2&>1\" >> /var/spool/cron/crontabs/root\\n` +\n    `echo \" \" >> /var/spool/cron/crontabs/root\\n` + \n    `echo \"30 5 * * * cd /opt/iplon/ && truncate -s 0 *.1 && truncate -s 0 *.log && cd\" >> /var/spool/cron/crontabs/root\\n` +\n    `echo \" \" >> /var/spool/cron/crontabs/root\\n` + \n    `echo \"30 3 * * * sudo reboot\" >> /var/spool/cron/crontabs/root\\n` +\n    `echo \" \" >> /var/spool/cron/crontabs/root\\n` + \n    `echo \"*/2 * * * * /opt/iplon/scripts/i_edge_data_push.sh\" >> /var/spool/cron/crontabs/root\\n` +\n    `echo \" \" >> /var/spool/cron/crontabs/root\\n` + \n    `echo \"*/15 * * * * /opt/iplon/scripts/iplon_vpn.sh\" >> /var/spool/cron/crontabs/root\\n` +\n    `echo \" \" >> /var/spool/cron/crontabs/root\\n` + \n    `\\n` +\n    `echo \"Setting up Hardware and Software Time Sync...\"\\n` +\n    `\\n` +\n    `systemctl restart iplon-bl\\n` +\n    `sudo reboot\\n`;\nmsg.payload = script;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 360,
+        "wires": [
+            [
+                "76c4d45b.8ed79c"
+            ]
+        ]
+    },
+    {
+        "id": "c49ade196e6676d8",
+        "type": "file",
+        "z": "03f533a0c75ebd2f",
+        "name": "",
+        "filename": "/tmp/guna_test.sh",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 930,
+        "y": 360,
+        "wires": [
+            [
+                "2d009f90ce895603"
+            ]
+        ]
+    },
+    {
+        "id": "2d009f90ce895603",
+        "type": "debug",
+        "z": "03f533a0c75ebd2f",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "f58f47e9.e825d",
+        "type": "ui_form",
+        "z": "03f533a0c75ebd2f",
+        "name": "",
+        "label": "",
+        "group": "8d0a5733.56e3d8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "iGate_ID",
+                "value": "message",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "UNIT_DESC",
+                "value": "message1",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "IP",
+                "value": "message2",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "BROADCAST_IP",
+                "value": "message3",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "GATEWAY_IP",
+                "value": "message4",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Master1_Devices",
+                "value": "message6",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Master2_Devices",
+                "value": "message7",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Master3_Devices",
+                "value": "message8",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Master4_Devices",
+                "value": "message9",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Master5_Devices",
+                "value": "message10",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Master6_Devices",
+                "value": "message11",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "Master7_Devices",
+                "value": "message12",
+                "type": "text",
+                "required": false,
+                "rows": null
+            },
+            {
+                "label": "iGate_info_Devices_yes",
+                "value": "message13",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "iGate_info_Master_ID",
+                "value": "message14",
+                "type": "number",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Server_URL_xyz.iplon.co.in",
+                "value": "message15",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "dglog_yes",
+                "value": "message16",
+                "type": "text",
+                "required": false,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "message": "",
+            "message1": "",
+            "message2": "",
+            "message3": "",
+            "message4": "",
+            "message6": "",
+            "message7": "",
+            "message8": "",
+            "message9": "",
+            "message10": "",
+            "message11": "",
+            "message12": "",
+            "message13": "",
+            "message14": "",
+            "message15": "",
+            "message16": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "",
+        "topicType": "str",
+        "splitLayout": false,
+        "className": "",
+        "x": 360,
+        "y": 360,
+        "wires": [
+            [
+                "2aa88bb7.4a849a"
+            ]
+        ]
+    },
+    {
+        "id": "76c4d45b.8ed79c",
+        "type": "ui_template",
+        "z": "03f533a0c75ebd2f",
+        "group": "8d0a5733.56e3d8",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<pre>{{msg.payload}}</pre>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 740,
+        "y": 360,
+        "wires": [
+            [
+                "c49ade196e6676d8"
+            ]
+        ]
+    },
+    {
+        "id": "25c7e75f8a2e78ef",
+        "type": "ui_template",
+        "z": "03f533a0c75ebd2f",
+        "group": "3ad2bc4a7ed3c9a3",
+        "name": "top-bar logo",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    #top-bar-logo {\n    background-image: url(https://media.licdn.com/dms/image/D4E0BAQHd8FmvwMrq_g/company-logo_200_200/0/1665037560142?e=2147483647&v=beta&t=-0WBInLRgZxo-HCsp13qFHOJJ2MiovcPO-bwY56xkiE);\n    background-size: 120px;\n    background-repeat: no-repeat;\n    background-position: 1600px;\n    height: 65px;\n    width: 1800px;\n}\n</style>\n\n<script id=\"logo-script\" type=\"text/javascript\">\nfunction build(){\n    $(\"#top-bar-logo\").remove()\n    var logo = $('<div />').attr(\"id\",\"top-bar-logo\");\n    var topbar = $('.md-toolbar-tools');\n    topbar.append(logo)\n}\nfunction checkExistence(){\n    console.log($(\"#top-bar-logo\"))\n    if($(\"#top-bar-logo\").length > 0){\n        return\n    }\n    build()\n    setTimeout(checkExistence,100)\n}\n\nbuild()\nsetTimeout(checkExistence,100)\n</script>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    }
+]
